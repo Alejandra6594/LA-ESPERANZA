@@ -1,0 +1,13 @@
+@import "../../../styles/partials/variables";
+
+/* tu-menu.component.css */
+:host {
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+.scrolled {
+  transition: background-color 0.3s ease;
+  background-color: $bg-navbar;
+  /* Color al hacer scroll */
+}
