@@ -1,0 +1,134 @@
+@import "./partials/box-flex";
+@import "./partials/media-queries";
+@import "./partials/variables";
+.container-fluid-hero {
+  position: relative;
+  // min-height: 100vh;
+  margin: 0;
+  scroll-snap-align: center;
+  background: rgb(148, 99, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(148, 99, 253, 1) 0%,
+    rgba(208, 118, 255, 1) 100%
+  );
+  .container-hero {
+    font-size: 1.5rem;
+    @include querie-compu {
+      font-size: 2rem;
+    }
+    min-height: 100vh;
+    .container-avatar {
+      position: relative;
+      margin-top: var(--height-header-and-margin-sections);
+      @include box-flex($alingVertical: flex-end);
+      overflow: hidden;
+      &__figure-avatar {
+        width: 11em;
+        height: 11em;
+        position: relative;
+        @include box-flex;
+        overflow: hidden;
+        margin: 0;
+        background-color: $bg-violet1;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 50%;
+        // border: 1px solid rgba(255, 255, 255, 0.18);
+        .container-avatar__img-avatar {
+          width: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          animation-duration: 3s;
+          animation-name: animation-avatar;
+          animation-iteration-count: infinite;
+          @include querie-compu {
+            top: -2rem;
+          }
+        }
+
+        @include querie-compu {
+          width: 10em;
+          height: 10em;
+          object-fit: cover;
+          // bottom: 1em;
+        }
+      }
+    }
+    .container-info {
+      @include box-flex(
+        $direction: column,
+        $alingHorizontal: flex-start,
+        $gap: 0
+      );
+      &__name {
+        font-size: 1.9em;
+        font-weight: bold;
+        color: $bg-white;
+        @include querie-compu {
+          font-size: 2.2em;
+        }
+      }
+      &__perfil {
+        font-size: 0.9em;
+        margin: 1rem 0;
+        color: $bg-violet4;
+
+        @include querie-compu {
+          font-size: 1.1em;
+          margin: 1.2rem 0;
+        }
+      }
+      &__buttons {
+        min-width: 9em;
+        max-width: 12em;
+        font-size: 0.65em;
+        padding: 1em;
+        margin: 0 0.5em 0 0;
+        border: 1px solid $bg-violet3;
+        background-color: $bg-white;
+        color: $bg-violet3;
+        font-weight: bold;
+        border-radius: 10px;
+        outline: none;
+      }
+    }
+  }
+}
+
+@keyframes animation-avatar {
+  from {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(0%);
+  }
+  40% {
+    clip-path: circle(40%);
+  }
+  100% {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:hesitate"] {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both;
+}

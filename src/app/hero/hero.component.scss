@@ -1,0 +1,53 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/box-flex";
+
+.container {
+  .row-container-hero {
+    .layer-hero {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background-color: $bg-red3;
+      z-index: -1;
+      border-radius: 0 0 0 7rem;
+    }
+    .side-titles {
+      @include box-flex($direction: column, $alingVertical: start);
+      text-align: left;
+      &__subtitle {
+        color: $bg-red1;
+        font-size: 1.2rem;
+      }
+      &__title {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+      &__description {
+        font-size: 1.2rem;
+        color: #4d3534;
+        margin: 0 5rem 0 0;
+      }
+      &__btn-view-menu {
+        background-color: $bg-red2;
+        color: #ffffff;
+        margin: 2rem 0;
+      }
+    }
+
+    .side-imagen {
+      @include box-flex($direction: column);
+      &__figure-img {
+        width: 100%;
+        height: 80%;
+
+        border-radius: 2rem;
+        background-image: url("../../assets/imgs/hero-imagen.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
