@@ -13,37 +13,54 @@
       z-index: -1;
       border-radius: 0 0 0 7rem;
     }
+
     .side-titles {
       @include box-flex($direction: column, $alingVertical: start);
       text-align: left;
+
       &__subtitle {
         color: $bg-red1;
         font-size: 0.9rem;
       }
+
       &__title {
         font-size: 4rem;
         font-weight: 700;
       }
+
       &__description {
         font-size: 1.2rem;
         color: #4d3534;
         margin: 0 5rem 0 0;
       }
+
       &__btn-view-menu {
         background-color: $bg-red2;
         color: #ffffff;
-        margin: 2rem 0;
+        margin: 2rem .5rem;
+        padding: .8rem 2rem;
+        border-radius: 2rem;
+      }
+
+      &__btn-view-menu--btn-schedules {
+        background-color: $bg-white;
+        color: $bg-red2;
+        border: 1px solid $bg-red2;
+        margin: 2rem .5rem;
+        padding: .8rem 2rem;
+        border-radius: 2rem;
       }
     }
 
     .side-imagen {
       @include box-flex($direction: column);
+
       &__figure-img {
         width: 80%;
         height: 70%;
 
         border-radius: 2rem;
-        background-image: url("../../assets/imgs/hero-imagen.jpg");
+        background-image: url("/assets/imgs/hero-imagen.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
