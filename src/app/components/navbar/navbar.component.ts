@@ -12,6 +12,5 @@ export class NavbarComponent {
   onWindowScroll() {
     // Lógica para verificar si se ha hecho scroll y actualizar la variable isScrolled
     this.isScrolled = window.scrollY > 0;
-    console.log(window.scrollY);
   }
 }

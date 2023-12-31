@@ -1,1 +1,37 @@
-<p>our-menu works!</p>
+<section class="container" id="our-menu">
+  <article class="row">
+    <section class="col-12">
+      <header class="header-menu m-0 mt-5 d-flex flex-column align-items-center justify-content-center text-center">
+        <span class="header-menu__subtitle">Sabores de excelencia</span>
+        <h2>Descrubre nuestro menú del día</h2>
+        <strong class="mb-2">{{fechaActual}}</strong>
+        <p class="m-0" style="width: 70%;">Deléitese con nuestros platos exclusivos, donde la autenticidad y el sabor se
+          unen para ofrecerle
+          un almuerzo
+          delicioso. !Sabores caseros a precios justos, porque en nuestra cocina económica cada
+          bocado es una
+          experiencia
+          deliciosa sin vaciar
+          tu bolsillo!</p>
+
+      </header>
+    </section>
+  </article>
+
+  <article class="row py-0 mt-4" style="padding: 0 8rem;">
+    <div class="col-4 text-center">
+      <!-- <app-card-menu></app-card-menu> -->
+      {{menuDay}}
+    </div>
+
+
+    <div class="col-4 text-center">
+      <app-card-menu></app-card-menu>
+    </div>
+
+
+    <div class="col-4 text-center">
+      <app-card-menu></app-card-menu>
+    </div>
+  </article>
+</section>

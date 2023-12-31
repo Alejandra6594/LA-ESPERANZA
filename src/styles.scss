@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./styles/partials/variables";
+
+section[id] {
+  scroll-margin-top: calc($height-header-and-margin-sections + 1rem);
+  scroll-behavior: smooth;
+
+}

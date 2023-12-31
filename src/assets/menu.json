@@ -1,0 +1,138 @@
+{
+  "menu_del_dia": [
+    {
+      "id": 1,
+      "nom_comida": "Fajitas",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Delgadas tiras de cerdo marinadas con especias y pimientos frescos, asadas a la perfección. Un festín de sabores jugosos, listo para ser envuelto en tortillas y disfrutado al estilo tex-mex."
+    },
+    {
+      "id": 2,
+      "nom_comida": "Costillas",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Jugosas costillas de cerdo sazonadas con una mezcla de especias y marinadas a la perfección, cocinadas lentamente a la parrilla para lograr un sabor ahumado y tierno. Un festín carnívoro que despierta los sentidos con cada bocado."
+    },
+    {
+      "id": 3,
+      "nom_comida": "Bistec de res",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Filetes tiernos sazonados con especias auténticas y asados a la perfección. Una experiencia de sabor que captura la esencia de la cocina tradicional de Yucatán."
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "nom_comida": "Bistec de res",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Filetes tiernos sazonados con especias auténticas y asados a la perfección. Una experiencia de sabor que captura la esencia de la cocina tradicional de Yucatán."
+    },
+    {
+      "id": 2,
+      "nom_comida": "Bistec",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    },
+    {
+      "id": 3,
+      "nom_comida": "Brazo de reina",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Capas suaves de masa de maíz, huevo cocido y acompañadas de salsa de tomate. Una delicia auténtica que resalta la tradición culinaria de Yucatán en cada porción."
+    },
+    {
+      "id": 4,
+      "nom_comida": "Carne asada",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Jugosos cortes de carne marinados con las especias yucatecas tradicionales, asados a la perfección para resaltar los sabores auténticos de la región."
+    },
+    {
+      "id": 5,
+      "nom_comida": "Costillas",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Jugosas costillas de cerdo sazonadas con una mezcla de especias y marinadas a la perfección, cocinadas lentamente a la parrilla para lograr un sabor ahumado y tierno. Un festín carnívoro que despierta los sentidos con cada bocado."
+    },
+    {
+      "id": 6,
+      "nom_comida": "Empanizado",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Filetes de cerdo tiernos y jugosos, recubiertos con una capa crujiente de pan rallado y especias. Una explosión de sabor y textura en cada bocado."
+    },
+    {
+      "id": 7,
+      "nom_comida": "Estofado de pollo",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Trozos tiernos de pollo cocidos a fuego lento en una mezcla de sabrosas hierbas, especias y vegetales, creando un guiso reconfortante y lleno de sabor."
+    },
+    {
+      "id": 8,
+      "nom_comida": "Fajitas",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Delgadas tiras de cerdo marinadas con especias y pimientos frescos, asadas a la perfección. Un festín de sabores jugosos, listo para ser envuelto en tortillas y disfrutado al estilo tex-mex."
+    },
+    {
+      "id": 9,
+      "nom_comida": "Frijol con puerco",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": "Un clásico platillo mexicano que combina frijoles cocidos con trozos de cerdo, cebolla, ajo y especias. Una mezcla reconfortante de sabores que crea un guiso sustancioso y delicioso."
+    },
+    {
+      "id": 10,
+      "nom_comida": "Lentejas",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    },
+    {
+      "nom_comida": "Mole",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    },
+    {
+      "nom_comida": "Pollo a la plancha",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    },
+    {
+      "nom_comida": "Pollo asado",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    },
+    {
+      "nom_comida": "Pollo con verduras",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    },
+    {
+      "nom_comida": "Potaje",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    },
+    {
+      "nom_comida": "Tamalitos",
+      "precio_uni": 6,
+      "descripcion": ""
+    },
+    {
+      "nom_comida": "Tortitas de papa",
+      "precio_media_racion": 45,
+      "precio_orden": 65,
+      "descripcion": ""
+    }
+  ]
+}
