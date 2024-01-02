@@ -18,20 +18,17 @@
     </section>
   </article>
 
-  <article class="row py-0 mt-4" style="padding: 0 8rem;">
-    <div class="col-4 text-center">
-      <!-- <app-card-menu></app-card-menu> -->
-      {{menuDay}}
-    </div>
-
-
-    <div class="col-4 text-center">
-      <app-card-menu></app-card-menu>
-    </div>
-
-
-    <div class="col-4 text-center">
-      <app-card-menu></app-card-menu>
+  <article *ngIf="menuDay.length > 0" class="row py-0 mt-4" style="padding: 0 7rem;">
+    <div *ngFor="let food of menuDay" class="col-4">
+      <app-card-menu [food]='food'></app-card-menu>
     </div>
   </article>
+  <article *ngIf="menuDay.length <= 0" class="row py-0 mt-4 " style="padding: 0 7rem;">
+    <div class="col-12 text-center">
+
+      <h3 class="text-danger">Lo sentimos, no tenemos menú para el día de hoy</h3>
+    </div>
+  </article>
+
+
 </section>

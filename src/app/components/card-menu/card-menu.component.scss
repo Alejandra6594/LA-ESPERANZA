@@ -1,0 +1,35 @@
+@import "/src/styles/partials/box-flex";
+@import "/src/styles/partials/variables";
+
+.myCardMenu {
+  @include box-flex($direction: column);
+
+  &__header {
+    height: 40%;
+  }
+
+  &__information {
+    flex-grow: 1;
+    @include box-flex($direction: column);
+
+    // .card-title {
+    //   color: $bg-red2;
+    // }
+
+    .card-text {
+      flex-grow: 1;
+    }
+
+    .btn-ordenar {
+      border: 1px solid $bg-red2;
+      color: $bg-red1;
+
+      &:hover {
+        border: 1px solid $bg-red1;
+        background-color: $bg-red3;
+        color: black;
+
+      }
+    }
+  }
+}

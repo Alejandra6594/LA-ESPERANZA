@@ -1,16 +1,15 @@
-<div class="card h-100">
-  <img src="/assets/imgs/comidas/fajitas_de_pollo.jpg" class="card-img-top" alt="Fajista de pollo" style="height: 40%;">
-  <div class="card-body">
-    <h3 class="card-title">Fajitas</h3>
-    <p class="card-text">Delgadas tiras de cerdo marinadas con especias y pimientos frescos, asadas a la
-      perfección. Un festín de sabores
-      jugosos, listo para ser envuelto en tortillas y disfrutado al estilo tex-mex.
-    </p>
-    <div>
-      <h5>Precios</h5>
-      <h6>1 Orden ------------- <strong class="text-danger">$65.00</strong></h6>
-      <h6>1/2 Orden ------------- <strong class="text-danger">$45.00</strong></h6>
+<div class="h-100 myCardMenu">
+  <header class="myCardMenu__header m-0 p-0">
+    <img src={{food.img_comida}} class=" w-100 h-100 " alt="Fajista de pollo">
+  </header>
+  <article class=" myCardMenu__information">
+    <h3 class="card-title m-0 p-0">{{food.nom_comida}}</h3>
+    <p class="card-text m-0 p-0">{{food.descripcion}}</p>
+    <div class="text-center">
+      <h5 class="m-0">👛Precios💰</h5>
+      <h6 class="m-0">1 Orden ------------- <strong class="text-danger">${{food.precio_orden}}</strong></h6>
+      <h6 class="m-0">1/2 Orden ------------- <strong class="text-danger">${{food.precio_media_racion}}</strong></h6>
+      <button class="btn btn-ordenar my-3">Ordenar</button>
     </div>
-    <button class="btn text-danger" style="border: 2px solid red;">Ordenar</button>
-  </div>
+  </article>
 </div>

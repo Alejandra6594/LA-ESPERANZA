@@ -2,6 +2,7 @@
   "menu_del_dia": [
     {
       "id": 1,
+      "img_comida": "/assets/imgs/comidas/fajitas_de_pollo.jpg",
       "nom_comida": "Fajitas",
       "precio_media_racion": 45,
       "precio_orden": 65,
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "img_comida": "/assets/imgs/comidas/costillas.jpg",
       "nom_comida": "Costillas",
       "precio_media_racion": 45,
       "precio_orden": 65,
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "img_comida": "/assets/imgs/comidas/bistec_de_res.jpg",
       "nom_comida": "Bistec de res",
       "precio_media_racion": 45,
       "precio_orden": 65,

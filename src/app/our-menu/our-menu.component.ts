@@ -10,8 +10,8 @@ import { DataOurMenu } from 'src/interfaces/ourMenu.interface';
 export class OurMenuComponent implements OnInit {
   constructor(private _http: MenuService) {}
   public fechaActual: string = '';
-  public menuDay: Object = {};
-  public menuAll: Object = {};
+  public menuDay: Array<any> = [];
+  public menuAll: Array<any> = [];
 
   ngOnInit(): void {
     this.getDataOurMenu();
