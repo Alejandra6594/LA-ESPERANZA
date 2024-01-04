@@ -2,7 +2,7 @@
 @import "./styles/partials/variables";
 
 section[id] {
-  scroll-margin-top: calc($height-header-and-margin-sections + 1rem);
+  scroll-margin-top: calc($height-header-and-margin-sections + 2rem);
   scroll-behavior: smooth;
 
 }

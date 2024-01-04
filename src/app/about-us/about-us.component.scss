@@ -1,0 +1,41 @@
+@import "/src/styles/partials/variables";
+
+.container-about-us {
+  .row-header {
+    margin-top: 5rem;
+    padding: 0;
+  }
+
+  .row-content {
+    .aside-imgs {
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+
+      &__figure {
+        overflow: hidden;
+        position: absolute;
+        width: 23rem;
+        height: 23rem;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+
+        z-index: 5;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        &--two {
+          top: 5rem;
+          left: 45%;
+          z-index: 6;
+        }
+
+      }
+    }
+  }
+}
