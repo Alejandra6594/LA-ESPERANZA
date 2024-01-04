@@ -1,11 +1,12 @@
-<section class="container" id="our-menu">
-  <article class="row">
+<section class="container" id="our-menu" style="padding: 0 7rem;">
+  <article class="row ">
     <section class="col-12">
       <header class="header-menu m-0 mt-5 d-flex flex-column align-items-center justify-content-center text-center">
         <span class="header-menu__subtitle">Sabores de excelencia</span>
         <h2>Descrubre nuestro menú del día</h2>
         <strong class="mb-2">{{fechaActual}}</strong>
-        <p class="m-0" style="width: 70%;">Deléitese con nuestros platos exclusivos, donde la autenticidad y el sabor se
+        <p class="m-0 mb-4" style="width: 70%;">Deléitese con nuestros platos exclusivos, donde la autenticidad y el
+          sabor se
           unen para ofrecerle
           un almuerzo
           delicioso. !Sabores caseros a precios justos, porque en nuestra cocina económica cada
@@ -18,12 +19,12 @@
     </section>
   </article>
 
-  <article *ngIf="menuDay.length > 0" class="row py-0 mt-4" style="padding: 0 7rem;">
+  <article *ngIf="menuDay.length > 0" class="row">
     <div *ngFor="let food of menuDay" class="col-4">
       <app-card-menu [food]='food'></app-card-menu>
     </div>
   </article>
-  <article *ngIf="menuDay.length <= 0" class="row py-0 mt-4 " style="padding: 0 7rem;">
+  <article *ngIf="menuDay.length <= 0" class="row py-0 mt-4">
     <div class="col-12 text-center">
 
       <h3 class="text-danger">Lo sentimos, no tenemos menú para el día de hoy</h3>
