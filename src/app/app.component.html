@@ -9,9 +9,16 @@
     <app-our-menu></app-our-menu>
   </section>
 
-  <section class="container-fluid min-vh-100 p-0 position-relative">
+  <app-banner [urlImg]='"/assets/imgs/banner1.jpg"'
+    [message]='"¡Experimenta la autenticidad de nuestras comidas!"'></app-banner>
+
+
+  <section class="container-fluid min-vh-100 p-0 position-relative mb-5">
     <app-about-us></app-about-us>
   </section>
+
+  <app-banner [urlImg]='"/assets/imgs/banner2.webp"'
+    [message]='"Deliciosos sabores que no comprometen tu bolsillo: donde el sabor y el ahorro se encuentran en cada platillo."'></app-banner>
 
 </main>
 
